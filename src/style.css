@@ -806,10 +806,19 @@ body:has(a:hover, button:hover) #cursor-ring {
   background: var(--bg2);
   border: 1px solid var(--border);
   overflow: hidden;
+  position: relative;
   transition: border-color .4s, transform .5s var(--ease), box-shadow .5s var(--ease);
   transform-style: preserve-3d;
   will-change: transform;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Link invisível que cobre o card inteiro */
+.card-link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .project-card:hover {
@@ -860,6 +869,7 @@ body:has(a:hover, button:hover) #cursor-ring {
   justify-content: center;
   opacity: 0;
   transition: opacity .4s;
+  z-index: 2;
 }
 
 .project-card:hover .project-overlay {
@@ -887,6 +897,8 @@ body:has(a:hover, button:hover) #cursor-ring {
 
 .project-body {
   padding: 1.5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .project-tags {
