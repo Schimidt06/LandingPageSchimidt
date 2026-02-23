@@ -224,16 +224,58 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 // =====================
-// CONTACT FORM
+// EMAILJS CONTACT FORM
 // =====================
-document.getElementById('contact-form')?.addEventListener('submit', e => {
+const EMAILJS_SERVICE = 'service_c7b3vkm';
+const EMAILJS_TEMPLATE = 'template_6gxqnxy';
+const EMAILJS_KEY = 'ftLxRMiw-H5VpXOrE';
+
+// Init SDK (loaded via CDN before this module)
+window.emailjs?.init({ publicKey: EMAILJS_KEY });
+
+document.getElementById('contact-form')?.addEventListener('submit', async e => {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type=submit]');
-  btn.textContent = 'Mensagem enviada! ✓';
-  btn.style.background = '#22c55e';
-  setTimeout(() => {
-    btn.innerHTML = 'Enviar Mensagem <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
+  const form = e.target;
+  const btn = form.querySelector('button[type=submit]');
+  const originalHTML = btn.innerHTML;
+
+  // Loading state
+  btn.disabled = true;
+  btn.innerHTML = 'Enviando... <span style="animation: blink 1s infinite; display:inline-block">_</span>';
+
+  const params = {
+    from_name: form.querySelector('#name').value,
+    from_email: form.querySelector('#email').value,
+    message: form.querySelector('#message').value,
+    to_name: 'João Schimidt',
+  };
+
+  try {
+    await window.emailjs.send(EMAILJS_SERVICE, EMAILJS_TEMPLATE, params);
+
+    btn.innerHTML = 'Mensagem enviada! ✓';
+    btn.style.background = '#22c55e';
+    btn.style.color = '#000';
+    form.reset();
+
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.style.background = '';
+      btn.style.color = '';
+      btn.disabled = false;
+    }, 4000);
+  } catch (err) {
+    console.error('EmailJS error:', err);
+    btn.innerHTML = 'Erro ao enviar. Tente novamente.';
+    btn.style.background = '#ef4444';
+    btn.style.color = '#fff';
+
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.style.background = '';
+      btn.style.color = '';
+      btn.disabled = false;
+    }, 3000);
+  }
 });
+
