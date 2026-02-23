@@ -257,6 +257,7 @@ document.getElementById('contact-form')?.addEventListener('submit', async e => {
     btn.style.background = '#22c55e';
     btn.style.color = '#000';
     form.reset();
+    showFormMsg(form, '', false);
 
     setTimeout(() => {
       btn.innerHTML = originalHTML;
@@ -266,7 +267,12 @@ document.getElementById('contact-form')?.addEventListener('submit', async e => {
     }, 4000);
   } catch (err) {
     console.error('EmailJS error:', err);
-    btn.innerHTML = 'Erro ao enviar. Tente novamente.';
+
+    // Extract a human-readable reason from the EmailJS error object
+    const reason = err?.text || err?.message || JSON.stringify(err) || 'Erro desconhecido';
+    showFormMsg(form, `Erro: ${reason}`, true);
+
+    btn.innerHTML = 'Erro ao enviar ↓';
     btn.style.background = '#ef4444';
     btn.style.color = '#fff';
 
@@ -275,7 +281,22 @@ document.getElementById('contact-form')?.addEventListener('submit', async e => {
       btn.style.background = '';
       btn.style.color = '';
       btn.disabled = false;
-    }, 3000);
+    }, 5000);
   }
 });
+
+function showFormMsg(form, msg, isError) {
+  let el = form.querySelector('.form-feedback');
+  if (!el) {
+    el = document.createElement('p');
+    el.className = 'form-feedback';
+    el.style.cssText = 'font-size:.8rem;margin-top:.5rem;padding:.6rem 1rem;font-family:var(--mono);';
+    form.appendChild(el);
+  }
+  el.textContent = msg;
+  el.style.color = isError ? '#f87171' : '#4ade80';
+  el.style.border = `1px solid ${isError ? 'rgba(248,113,113,.3)' : 'rgba(74,222,128,.3)'}`;
+  el.style.display = msg ? 'block' : 'none';
+}
+
 
