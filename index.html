@@ -322,48 +322,71 @@
         <h2 class="text-4xl md:text-6xl font-black text-white terminal-accent">SKILLS_</h2>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-px bg-white/5 border border-white/5">
-        <div
-          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
-          <i
-            class="devicon-rust-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
-          <span
-            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">RUST_LANG</span>
+      <div class="grid md:grid-cols-3 gap-px bg-white/5 border border-white/5">
+        <!-- Category 1: SYSTEMS & CORE -->
+        <div class="bg-black p-10 border-white/5">
+          <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-8">SYSTEMS_ENGINEERING</div>
+          <div class="space-y-8">
+            <div class="flex items-center group">
+              <i
+                class="devicon-rust-plain text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">RUST / WASM</div>
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="devicon-go-original-wordmark text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">GOLANG / GIN</div>
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="devicon-python-plain text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">PYTHON / AI</div>
+            </div>
+          </div>
         </div>
-        <div
-          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
-          <i
-            class="devicon-python-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
-          <span
-            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">AI_PYTHON</span>
+
+        <!-- Category 2: MODERN DEVELOPMENT -->
+        <div class="bg-black p-10 border-white/5">
+          <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-8">MODERN_EDGE</div>
+          <div class="space-y-8">
+            <div class="flex items-center group">
+              <i
+                class="devicon-typescript-plain text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">TYPESCRIPT / TSX</div>
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="devicon-nextjs-original text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">NEXT.JS / ASTRO</div>
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="devicon-bun-plain text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">BUN / NODE.JS</div>
+            </div>
+          </div>
         </div>
-        <div
-          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
-          <i
-            class="devicon-typescript-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
-          <span
-            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">TYPESCRIPT</span>
-        </div>
-        <div
-          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
-          <i
-            class="devicon-nextjs-original text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
-          <span
-            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">NEXT.JS</span>
-        </div>
-        <div
-          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
-          <i
-            class="devicon-kubernetes-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
-          <span
-            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">KUBERNETES</span>
-        </div>
-        <div
-          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
-          <i
-            class="devicon-terraform-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
-          <span
-            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">TERRAFORM</span>
+
+        <!-- Category 3: INFRASTRUCTURE -->
+        <div class="bg-black p-10 border-white/5">
+          <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-8">CLOUD_OPERATIONS</div>
+          <div class="space-y-8">
+            <div class="flex items-center group">
+              <i
+                class="devicon-kubernetes-plain text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">KUBERNETES / K8S</div>
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="devicon-terraform-plain text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">TERRAFORM / IaC</div>
+            </div>
+            <div class="flex items-center group">
+              <i
+                class="devicon-postgresql-plain text-2xl mr-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+              <div class="text-[10px] text-white font-bold tracking-widest uppercase">POSTGRESQL / SQL</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
