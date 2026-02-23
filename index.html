@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Schimidt</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body class="antialiased selection:bg-cyan-500 selection:text-white relative bg-[#0f172a]">
+
+  <nav class="fixed w-full z-50 border-b border-white/5 bg-black/50 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center">
+          <span class="text-xl font-black tracking-tighter text-white">
+            SCHIMDT<span class="text-cyan-500">.</span>
+          </span>
+        </div>
+        <div class="hidden md:flex items-center space-x-12">
+          <div class="flex items-baseline space-x-10">
+            <a href="#home" class="nav-link text-xs hover:text-cyan-400 transition-colors">Início</a>
+            <a href="#about" class="nav-link text-xs hover:text-cyan-400 transition-colors">Sobre</a>
+            <a href="#services" class="nav-link text-xs hover:text-cyan-400 transition-colors">Serviços</a>
+            <a href="#projects" class="nav-link text-xs hover:text-cyan-400 transition-colors">Projetos</a>
+            <a href="#skills" class="nav-link text-xs hover:text-cyan-400 transition-colors">Skills</a>
+            <a href="#contact" class="btn-tech px-6 py-2 text-[10px]">Contato</a>
+          </div>
+          <button id="theme-toggle" class="text-slate-400 hover:text-cyan-400 transition-all">
+            <i class="fas fa-sun"></i>
+          </button>
+        </div>
+        <!-- ... mobile buttons ... -->
+        <div class="md:hidden flex items-center space-x-4">
+          <button id="theme-toggle-mobile" class="text-slate-400">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button id="mobile-menu-btn" class="text-slate-300">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-black/95 backdrop-blur-2xl md:hidden">
+    <div class="flex flex-col items-center justify-center h-full space-y-12">
+      <a href="#home" class="text-2xl font-black text-white terminal-accent uppercase tracking-widest">INÍCIO</a>
+      <a href="#about" class="text-2xl font-black text-white terminal-accent uppercase tracking-widest">SOBRE</a>
+      <a href="#services" class="text-2xl font-black text-white terminal-accent uppercase tracking-widest">SERVIÇOS</a>
+      <a href="#projects" class="text-2xl font-black text-white terminal-accent uppercase tracking-widest">PROJETOS</a>
+      <a href="#skills" class="text-2xl font-black text-white terminal-accent uppercase tracking-widest">SKILLS</a>
+      <a href="#contact" class="btn-tech text-sm px-10 py-4">CONTATO_</a>
+    </div>
+  </div>
+
+  <section id="home" class="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <div
+        class="inline-block mb-6 px-3 py-1 border border-cyan-500/20 bg-cyan-500/5 text-cyan-400 text-[10px] font-bold tracking-[0.3em] uppercase">
+        Systems Online // v.2.0.26
+      </div>
+      <h1 class="text-6xl md:text-9xl font-black mb-6 tracking-tighter leading-none">
+        FULLSTACK<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500">DEVELOPER</span>
+      </h1>
+      <p class="mt-4 max-w-xl mx-auto text-sm text-slate-400 leading-relaxed uppercase tracking-widest font-medium">
+        Construindo soluções digitais de ponta a ponta.
+        Performances extremas e experiências imersivas.
+      </p>
+      <div class="mt-12 flex flex-col sm:flex-row justify-center gap-6">
+        <a href="#projects" class="btn-tech btn-tech-solid shadow-2xl shadow-cyan-500/20">
+          Projetos_
+        </a>
+        <a href="https://github.com/Schimidt06" target="_blank" class="btn-tech">
+          GitHub_
+        </a>
+      </div>
+    </div>
+
+    <!-- Scanned Border Decoration -->
+    <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent">
+    </div>
+  </section>
+
+
+  <section id="about" class="py-32" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-20 items-center">
+        <div class="relative group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-sm blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200">
+          </div>
+          <div class="relative bg-black p-10 border border-white/10">
+            <h3 class="text-2xl font-black mb-8 text-white terminal-accent">SOBRE_</h3>
+            <div class="space-y-6 text-sm leading-relaxed text-slate-400 font-medium uppercase tracking-widest">
+              <p>
+                Eu sou <span class="text-white">João Schimidt</span>.
+                Desenvolvedor focado em performance e sistemas de alto nível.
+              </p>
+              <p>
+                Atualmente operando na <span class="text-cyan-500">Route 66</span>,
+                integrando infraestrutura, bancos de dados e desenvolvimento full stack.
+              </p>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-white/10 grid grid-cols-2 gap-4">
+              <div>
+                <div class="text-[10px] text-cyan-500 mb-1">LOCATION::</div>
+                <div class="text-xs text-white">JAÚ, SP // BRAZIL</div>
+              </div>
+              <div>
+                <div class="text-[10px] text-cyan-500 mb-1">STATUS::</div>
+                <div class="text-xs text-white">AVAILABLE_FOR_HIRE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="glass-card p-6 border-white/5 hover:border-cyan-500/50">
+            <div class="text-cyan-500 text-xs mb-4">01 // MULTIDISCIPLINAR</div>
+            <h4 class="text-white text-sm font-bold mb-2">BACKEND & CLOUD</h4>
+            <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest">Sistemas escaláveis com foco
+              em robustez.</p>
+          </div>
+          <div class="glass-card p-6 border-white/5 hover:border-cyan-500/50">
+            <div class="text-cyan-500 text-xs mb-4">02 // CORPORATIVO</div>
+            <h4 class="text-white text-sm font-bold mb-2">EXPERIÊNCIA REAL</h4>
+            <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest">Soluções aplicadas a
+              problemas reais.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-32 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+      <div class="mb-20">
+        <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-4">CORE FUNCTIONS</div>
+        <h2 class="text-4xl md:text-6xl font-black text-white terminal-accent">SERVIÇOS_</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-1">
+        <div class="glass-card p-10 bg-white/[0.02] hover:bg-white/[0.05] border-white/5" data-aos="fade-up"
+          data-aos-delay="100">
+          <div class="text-cyan-500 mb-6"><i class="fas fa-code text-2xl"></i></div>
+          <h3 class="text-lg text-white mb-4">WEB_DEV</h3>
+          <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest">Full stack architecture.
+            React. Vite. Performance first.</p>
+        </div>
+        <div class="glass-card p-10 bg-white/[0.02] hover:bg-white/[0.05] border-white/5" data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="text-cyan-500 mb-6"><i class="fas fa-server text-2xl"></i></div>
+          <h3 class="text-lg text-white mb-4">BACKEND_API</h3>
+          <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest">Scalable REST APIs. .NET &
+            Golang integration systems.</p>
+        </div>
+        <div class="glass-card p-10 bg-white/[0.02] hover:bg-white/[0.05] border-white/5" data-aos="fade-up"
+          data-aos-delay="300">
+          <div class="text-cyan-500 mb-6"><i class="fas fa-cloud text-2xl"></i></div>
+          <h3 class="text-lg text-white mb-4">CLOUD_INFRA</h3>
+          <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest">Azure cloud solutions.
+            Infrastructure management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS SECTION -->
+  <section id="projects" class="py-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-20" data-aos="fade-up">
+        <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-4">SELECTED_WORKS</div>
+        <h2 class="text-4xl md:text-6xl font-black text-white terminal-accent">PROJETOS_</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-1">
+        <!-- Projeto 1 -->
+        <div class="project-card group glass-card bg-white/[0.02] border-white/5 overflow-hidden" data-aos="fade-up">
+          <div class="h-64 bg-slate-900 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6958?auto=format&fit=crop&q=80&w=800"
+              alt="Lumina Cleaning"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <a href="https://github.com/Schimidt06/Lumina-Cleaning-Pros" target="_blank"
+                class="btn-tech px-6 py-2 text-[10px] bg-black">VIEW_REPO</a>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="text-[10px] text-cyan-500 font-bold mb-2">VITE // REACT</div>
+            <h3 class="text-lg text-white mb-4">LUMINA_CLEANING</h3>
+            <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest mb-6">Modern service
+              platform. UX focused.</p>
+            <a href="https://github.com/Schimidt06/Lumina-Cleaning-Pros" target="_blank"
+              class="text-white text-[10px] font-bold tracking-widest hover:text-cyan-500 transition-colors">
+              DETAILS_ACCESS >
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card group glass-card bg-white/[0.02] border-white/5 overflow-hidden" data-aos="fade-up"
+          data-aos-delay="100">
+          <div class="h-64 bg-slate-900 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1548691905-57c36cc8d93f?auto=format&fit=crop&q=80&w=800"
+              alt="Personal Trainer"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <a href="https://github.com/Schimidt06/PersonalTrainer-Elite" target="_blank"
+                class="btn-tech px-6 py-2 text-[10px] bg-black">VIEW_REPO</a>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="text-[10px] text-cyan-500 font-bold mb-2">TAILWIND // JS</div>
+            <h3 class="text-lg text-white mb-4">PT_ELITE</h3>
+            <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest mb-6">High conversion fitness
+              landing page.</p>
+            <a href="https://github.com/Schimidt06/PersonalTrainer-Elite" target="_blank"
+              class="text-white text-[10px] font-bold tracking-widest hover:text-cyan-500 transition-colors">
+              DETAILS_ACCESS >
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card group glass-card bg-white/[0.02] border-white/5 overflow-hidden" data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="h-64 bg-black flex items-center justify-center relative overflow-hidden">
+            <div class="text-cyan-500/20 font-mono text-xs select-none">DATA_STREAM :: SYNC</div>
+            <div
+              class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <a href="https://github.com/Schimidt06/api-rest-gin-go" target="_blank"
+                class="btn-tech px-6 py-2 text-[10px] bg-black">VIEW_REPO</a>
+            </div>
+          </div>
+          <div class="p-8">
+            <div class="text-[10px] text-cyan-500 font-bold mb-2">GO // GIN // REST</div>
+            <h3 class="text-lg text-white mb-4">GIN_API_REST</h3>
+            <p class="text-[10px] text-slate-500 leading-relaxed uppercase tracking-widest mb-6">Backend scalability
+              architecture.</p>
+            <a href="https://github.com/Schimidt06/api-rest-gin-go" target="_blank"
+              class="text-white text-[10px] font-bold tracking-widest hover:text-cyan-500 transition-colors">
+              DETAILS_ACCESS >
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-20 flex justify-center" data-aos="fade-up">
+        <a href="https://github.com/Schimidt06" target="_blank" class="btn-tech">
+          FULL_STACK_ARCHIVE_
+        </a>
+      </div>
+
+      <!-- GitHub Stats -->
+      <div class="mt-32 pt-20 border-t border-white/5" data-aos="fade-up">
+        <div class="text-center mb-12">
+          <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-2">NETWORK ACTIVITY</div>
+          <h3 class="text-2xl font-black text-white terminal-accent">ECOSSISTEMA_GITHUB</h3>
+        </div>
+        <div class="grid md:grid-cols-2 gap-px bg-white/5 p-px">
+          <div class="bg-black p-8">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=Schimidt06&show_icons=true&theme=tokyonight&hide_border=true&bg_color=000000"
+              alt="GitHub Stats" class="w-full grayscale hover:grayscale-0 transition duration-500">
+          </div>
+          <div class="bg-black p-8">
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=Schimidt06&layout=compact&theme=tokyonight&hide_border=true&bg_color=000000"
+              alt="Top Languages" class="w-full grayscale hover:grayscale-0 transition duration-500">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-32" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-20 text-center">
+        <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-4">TRAJECTORY_LOG</div>
+        <h2 class="text-4xl md:text-6xl font-black text-white terminal-accent">EXPERIÊNCIA_</h2>
+      </div>
+
+      <div class="space-y-px bg-white/5">
+        <div class="bg-black p-12 hover:bg-white/[0.02] transition-colors border-l-2 border-cyan-500">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+              <span class="text-cyan-500 font-mono text-[10px] tracking-widest">AUG 2025 // PRESENT</span>
+              <h3 class="text-xl font-bold text-white mt-2">HELPDESK_SUPPORT</h3>
+            </div>
+            <div class="text-xs text-slate-500 font-bold uppercase tracking-widest">ROUTE 66 // JAÚ, SP</div>
+          </div>
+          <p class="text-[10px] text-slate-400 leading-relaxed uppercase tracking-[0.2em] max-w-2xl">
+            Operating N2 support, infrastructure systems, networking, and SQL database management.
+          </p>
+        </div>
+
+        <div class="bg-black p-12 hover:bg-white/[0.02] transition-colors border-l-2 border-slate-700">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+            <div>
+              <span class="text-slate-500 font-mono text-[10px] tracking-widest">JAN 2023 // NOV 2024</span>
+              <h3 class="text-xl font-bold text-white mt-2">FREELANCE_DEVELOPER</h3>
+            </div>
+            <div class="text-xs text-slate-500 font-bold uppercase tracking-widest">REMOTE_OPS</div>
+          </div>
+          <p class="text-[10px] text-slate-400 leading-relaxed uppercase tracking-[0.2em] max-w-2xl">
+            Full-stack systems architecture. Modern web platforms and automated solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-32 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-20" data-aos="fade-up">
+        <div class="text-cyan-500 text-[10px] font-bold tracking-[0.3em] mb-4">TECHNICAL_STACK</div>
+        <h2 class="text-4xl md:text-6xl font-black text-white terminal-accent">SKILLS_</h2>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-px bg-white/5 border border-white/5">
+        <div
+          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
+          <i
+            class="devicon-csharp-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+          <span
+            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">C#_.NET</span>
+        </div>
+        <div
+          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
+          <i
+            class="devicon-go-original-wordmark text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+          <span
+            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">GOLANG</span>
+        </div>
+        <div
+          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
+          <i
+            class="devicon-react-original text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+          <span
+            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">REACT.JS</span>
+        </div>
+        <div
+          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
+          <i
+            class="devicon-tailwindcss-original text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+          <span
+            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">TAILWIND</span>
+        </div>
+        <div
+          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
+          <i
+            class="devicon-azure-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+          <span
+            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">AZURE</span>
+        </div>
+        <div
+          class="bg-black p-8 group hover:bg-white/[0.02] transition-colors flex flex-col items-center justify-center">
+          <i
+            class="devicon-docker-plain text-3xl mb-4 grayscale group-hover:grayscale-0 group-hover:text-cyan-500 transition-all"></i>
+          <span
+            class="text-[8px] font-bold tracking-widest text-slate-500 group-hover:text-white uppercase">DOCKER</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-20 bg-slate-900" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Experiência Profissional</h2>
+      <div class="relative border-l-2 border-slate-700 ml-3 md:ml-6 space-y-12">
+        <div class="relative pl-8 md:pl-12">
+          <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-cyan-500 timeline-dot"></div>
+          <div class="mb-1 text-sm font-bold text-cyan-400 tracking-wider">AGO 2025 - ATUAL</div>
+          <div
+            class="bg-slate-800/50 p-6 rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-colors">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
+              <h3 class="text-xl font-bold text-white">HelpDesk</h3>
+              <div class="text-right">
+                <span
+                  class="text-slate-400 text-sm bg-slate-900 px-3 py-1 rounded-full border border-slate-700 block md:inline-block">Route
+                  66 – Jaú, SP</span>
+              </div>
+            </div>
+            <p class="text-slate-300 mb-4">
+              Suporte N2, infraestrutura, redes e banco de dados.
+            </p>
+          </div>
+        </div>
+        <div class="relative pl-8 md:pl-12">
+          <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-500 timeline-dot"></div>
+          <div class="mb-1 text-sm font-bold text-indigo-400 tracking-wider">JAN 2023 - NOV 2024</div>
+          <div class="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
+            <h3 class="text-xl font-bold text-white mb-1">Desenvolvedor Freelancer</h3>
+            <p class="text-slate-300 mb-4">
+              Projetos full-stack, sites e automações.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-px bg-white/5 p-px">
+        <div class="bg-black p-12">
+          <h3 class="text-xl font-bold mb-8 flex items-center text-white">
+            <i class="fas fa-graduation-cap text-cyan-400 mr-3"></i> FORMAÇÃO_
+          </h3>
+          <div class="space-y-6">
+            <div class="hover:bg-white/[0.02] transition-colors p-4 -ml-4">
+              <h4 class="text-sm font-bold text-white uppercase tracking-widest">CIÊNCIA_COMPUTAÇÃO</h4>
+              <p class="text-[10px] text-cyan-500 font-mono mt-1">UNISAGRADO // 2025-2029</p>
+            </div>
+            <div class="hover:bg-white/[0.02] transition-colors p-4 -ml-4">
+              <h4 class="text-sm font-bold text-white uppercase tracking-widest">DEV_SISTEMAS</h4>
+              <p class="text-[10px] text-indigo-500 font-mono mt-1">SENAI // CONCLUÍDO</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-black p-12">
+          <h3 class="text-xl font-bold mb-8 flex items-center text-white">
+            <i class="fas fa-certificate text-yellow-400 mr-3"></i> CERTIFICAÇÕES_
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="px-3 py-1 bg-white/5 text-[10px] text-white font-bold uppercase tracking-widest border border-white/5 hover:border-cyan-500/50 transition-colors">MS
+              // AI-900</span>
+            <span
+              class="px-3 py-1 bg-white/5 text-[10px] text-white font-bold uppercase tracking-widest border border-white/5 hover:border-cyan-500/50 transition-colors">MS
+              // AZ-900</span>
+            <span
+              class="px-3 py-1 bg-white/5 text-[10px] text-white font-bold uppercase tracking-widest border border-white/5 hover:border-cyan-500/50 transition-colors">LGPD</span>
+            <span
+              class="px-3 py-1 bg-white/5 text-[10px] text-white font-bold uppercase tracking-widest border border-white/5 hover:border-cyan-500/50 transition-colors">GIT_CONFIG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-32" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="mb-16">
+        <div class="text-cyan-500 text-[10px] font-bold tracking-[0.4em] mb-4">INITIATE_CONTACT</div>
+        <h2 class="text-4xl md:text-6xl font-black text-white terminal-accent">CONTATO_</h2>
+      </div>
+
+      <div class="glass-card p-12 bg-white/[0.02] border-white/10">
+        <p class="text-sm text-slate-400 uppercase tracking-[0.3em] font-medium mb-10">
+          Sempre aberto a novos desafios e parcerias inovadoras.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+          <a href="mailto:jpschimidtfuentes@gmail.com" class="btn-tech btn-tech-solid">
+            SEND_MESSAGE_
+          </a>
+          <a href="https://www.linkedin.com/in/jpschimidt/" target="_blank" class="btn-tech">
+            LINKEDIN_PROFILE_
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-20 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-10">
+      <div class="text-left">
+        <div class="text-xl font-black tracking-tighter text-white mb-2">SCHIMDT<span class="text-cyan-500">.</span>
+        </div>
+        <div class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">© 2026 // ALL_RIGHTS_RESERVED</div>
+      </div>
+
+      <div class="flex flex-col items-center md:items-end">
+        <div class="flex items-center text-[10px] text-cyan-500 font-bold tracking-widest mb-2">
+          <span class="w-2 h-2 bg-cyan-500 rounded-full animate-pulse mr-2"></span>
+          ALL_SYSTEMS_OPERATIONAL
+        </div>
+        <div class="text-[8px] text-slate-600 font-mono">LATENCY: 12ms // SERVER_NODE: SCHIMDT_CORE</div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

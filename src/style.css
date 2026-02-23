@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #0a0a0c;
+  --acc-main: #06b6d4;
+  --acc-sec: #6366f1;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --card-bg: rgba(15, 15, 18, 0.8);
+  --border-main: rgba(255, 255, 255, 0.08);
+}
+
+html.light {
+  --bg-main: #ffffff;
+  --acc-main: #0891b2;
+  --acc-sec: #4f46e5;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --card-bg: rgba(248, 250, 252, 0.8);
+  --border-main: rgba(15, 23, 42, 0.08);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  background-image:
+    radial-gradient(circle at 2px 2px, var(--border-main) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Typography Overhaul */
+h1,
+h2,
+h3,
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+}
+
+.terminal-accent::after {
+  content: '_';
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Minimalist Components */
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-main);
+  border-radius: 4px;
+  /* Sharper corners */
+  transition: all 0.3s ease;
+}
+
+.service-card:hover,
+.project-card:hover {
+  border-color: var(--acc-main);
+  transform: translateY(-4px);
+  background: var(--card-bg);
+}
+
+.btn-tech {
+  position: relative;
+  padding: 0.75rem 2rem;
+  border-radius: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--acc-main);
+  color: var(--acc-main);
+}
+
+.btn-tech:hover {
+  background: var(--acc-main);
+  color: white;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+}
+
+.btn-tech-solid {
+  background: var(--acc-main);
+  color: white;
+}
+
+.btn-tech-solid:hover {
+  background: var(--acc-sec);
+  border-color: var(--acc-sec);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-main);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--acc-main);
+}
+
+/* Theme Overrides for Sections */
+html.light .bg-slate-900,
+html.light .bg-tech-dark,
+html.light .bg-slate-800,
+html.light .bg-black {
+  background-color: transparent !important;
+}
+
+section {
+  position: relative;
+  border-bottom: 1px solid var(--border-main);
+}
